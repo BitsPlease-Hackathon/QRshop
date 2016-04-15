@@ -13,12 +13,12 @@
 
     <parent>
         <artifactId>qrshop-parent</artifactId>
-        <groupId>eu.team4hackathon</groupId>
+        <groupId>com.bitsplease</groupId>
         <version>0.1.0-SNAPSHOT</version>
     </parent>
 
     <properties>
-        <start-class>eu.team4hackathon.qrshop.security.Application</start-class>
+        <start-class>com.bitsplease.qrshop.security.Application</start-class>
         <java.version>1.8</java.version>
     </properties>
 
@@ -26,12 +26,7 @@
         <!-- Module Dependencies -->
 
         <dependency>
-            <groupId>eu.team4hackathon</groupId>
-            <artifactId>qrshop-commons</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.team4hackathon</groupId>
+            <groupId>com.bitsplease</groupId>
             <artifactId>qrshop-domain</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>

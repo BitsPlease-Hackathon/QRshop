@@ -13,12 +13,12 @@
 
     <parent>
         <artifactId>qrshop-parent</artifactId>
-        <groupId>eu.team4hackathon</groupId>
+        <groupId>com.bitsplease</groupId>
         <version>0.1.0-SNAPSHOT</version>
     </parent>
 
     <properties>
-        <start-class>eu.team4hackathon.qrshop.mapper.Application</start-class>
+        <start-class>com.bitsplease.qrshop.mapper.Application</start-class>
         <java.version>1.8</java.version>
         <org.mapstruct.version>1.0.0.Final</org.mapstruct.version>
     </properties>
@@ -34,17 +34,12 @@
         <!-- Module Dependencies -->
 
         <dependency>
-            <groupId>eu.team4hackathon</groupId>
-            <artifactId>qrshop-commons</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.team4hackathon</groupId>
+            <groupId>com.bitsplease</groupId>
             <artifactId>qrshop-domain</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>eu.team4hackathon</groupId>
+            <groupId>com.bitsplease</groupId>
             <artifactId>qrshop-dto</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>

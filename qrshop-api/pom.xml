@@ -12,13 +12,13 @@
     <description>API for QRshop</description>
 
     <parent>
-        <groupId>eu.team4hackathon</groupId>
+        <groupId>com.bitsplease</groupId>
         <artifactId>qrshop-parent</artifactId>
         <version>0.1.0-SNAPSHOT</version>
     </parent>
 
     <properties>
-        <start-class>eu.team4hackathon.qrshop.api.Application</start-class>
+        <start-class>com.bitsplease.qrshop.api.Application</start-class>
         <java.version>1.8</java.version>
     </properties>
 
@@ -26,32 +26,27 @@
         <!-- Module Dependencies -->
 
         <dependency>
-            <groupId>eu.team4hackathon</groupId>
-            <artifactId>qrshop-commons</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.team4hackathon</groupId>
+            <groupId>com.bitsplease</groupId>
             <artifactId>qrshop-domain</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>eu.team4hackathon</groupId>
+            <groupId>com.bitsplease</groupId>
             <artifactId>qrshop-service</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>eu.team4hackathon</groupId>
+            <groupId>com.bitsplease</groupId>
             <artifactId>qrshop-dto</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>eu.team4hackathon</groupId>
+            <groupId>com.bitsplease</groupId>
             <artifactId>qrshop-mapper</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>eu.team4hackathon</groupId>
+            <groupId>com.bitsplease</groupId>
             <artifactId>qrshop-security</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
@@ -105,6 +100,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>qrshop-api</finalName>
+                    <executable>true</executable>
+                </configuration>
             </plugin>
         </plugins>
     </build>
