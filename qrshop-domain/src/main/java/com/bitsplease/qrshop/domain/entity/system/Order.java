@@ -20,6 +20,8 @@ public class Order extends BaseEntity {
     @Column(name = "status")
     private String status;
 
+
+
     public Date getDate() {
         return date;
     }

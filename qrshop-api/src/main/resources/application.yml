@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: Development,Postgres
+    active: Development,H2
 
 server:
   port: 9000
