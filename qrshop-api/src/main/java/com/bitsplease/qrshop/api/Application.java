@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Import;
         com.bitsplease.qrshop.domain.DomainConfig.class,
         com.bitsplease.qrshop.security.SecurityConfig.class,
         com.bitsplease.qrshop.service.ServiceConfig.class,
-        com.bitsplease.qrshop.mapper.MapperConfig.class
+        com.bitsplease.qrshop.mapper.Application.class
 })
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
