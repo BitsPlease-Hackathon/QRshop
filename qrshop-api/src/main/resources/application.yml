@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: Development, Postgres
+
+server:
+  port: 9000
+
+---
+
+spring:
+  profiles: Development
+
+  jpa:
+    generate-ddl: true
+
+    hibernate:
+      ddl-auto: create-drop
+
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+---
+
+spring:
+  profiles: Production
+
