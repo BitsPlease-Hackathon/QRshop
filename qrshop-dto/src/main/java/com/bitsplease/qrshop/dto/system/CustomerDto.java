@@ -1,64 +1,42 @@
 package com.bitsplease.qrshop.dto.system;
 
 import com.bitsplease.qrshop.dto.AbstractDto;
+import com.bitsplease.qrshop.dto.Reference;
+import com.bitsplease.qrshop.dto.embeddable.AddressDto;
+import com.bitsplease.qrshop.dto.embeddable.NameDto;
+
+import java.util.List;
 
 /**
  * @author Chrisostomos Bakouras
  */
 public class CustomerDto extends AbstractDto {
 
-    private String firstname;
-    private String lastname;
-    private String addressStreet;
-    private String addresNumber;
-    private String city;
-    private String postalcode;
+    private NameDto name;
+    private AddressDto address;
+    private List<Reference> orders;
 
-    public String getFirstname() {
-        return firstname;
+    public NameDto getName() {
+        return name;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setName(NameDto name) {
+        this.name = name;
     }
 
-    public String getLastname() {
-        return lastname;
+    public AddressDto getAddress() {
+        return address;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setAddress(AddressDto address) {
+        this.address = address;
     }
 
-    public String getAddressStreet() {
-        return addressStreet;
+    public List<Reference> getOrders() {
+        return orders;
     }
 
-    public void setAddressStreet(String addressStreet) {
-        this.addressStreet = addressStreet;
-    }
-
-    public String getAddresNumber() {
-        return addresNumber;
-    }
-
-    public void setAddresNumber(String addresNumber) {
-        this.addresNumber = addresNumber;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getPostalcode() {
-        return postalcode;
-    }
-
-    public void setPostalcode(String postalcode) {
-        this.postalcode = postalcode;
+    public void setOrders(List<Reference> orders) {
+        this.orders = orders;
     }
 }

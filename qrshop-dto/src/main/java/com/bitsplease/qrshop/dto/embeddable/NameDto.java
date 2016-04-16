@@ -1,17 +1,11 @@
-package com.bitsplease.qrshop.domain.entity.embeddable;
-
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
+package com.bitsplease.qrshop.dto.embeddable;
 
 /**
  * @author Chrisostomos Bakouras
  */
-@Embeddable
-public class Name {
-    @Column(name = "first_name")
-    private String firstName;
+public class NameDto {
 
-    @Column(name = "last_name")
+    private String firstName;
     private String lastName;
 
     public String getFirstName() {

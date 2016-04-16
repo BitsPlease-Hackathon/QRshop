@@ -1,24 +1,13 @@
-package com.bitsplease.qrshop.domain.entity.embeddable;
-
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
+package com.bitsplease.qrshop.dto.embeddable;
 
 /**
  * @author Chrisostomos Bakouras
  */
-@Embeddable
-public class Address {
+public class AddressDto {
 
-    @Column(name = "address_street")
     private String addressStreet;
-
-    @Column(name = "address_number")
     private String addressNumber;
-
-    @Column(name = "city")
     private String city;
-
-    @Column(name = "postal_code")
     private String postalCode;
 
     public String getAddressStreet() {

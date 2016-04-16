@@ -4,10 +4,7 @@ import com.bitsplease.qrshop.domain.entity.BaseEntity;
 import com.bitsplease.qrshop.domain.entity.embeddable.Address;
 import com.bitsplease.qrshop.domain.entity.embeddable.Name;
 
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -21,16 +18,32 @@ public class Customer extends BaseEntity {
     private Name name;
 
     @Embedded
-    private Address shippingAddress;
+    private Address address;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "customer")
     private List<Order> orders;
 
-    public Address getShippingAddress() {
-        return shippingAddress;
+    public Name getName() {
+        return name;
     }
 
-    public void setShippingAddress(Address shippingAddress) {
-        this.shippingAddress = shippingAddress;
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 }
