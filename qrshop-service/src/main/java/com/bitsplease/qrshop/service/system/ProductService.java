@@ -6,5 +6,5 @@ import com.bitsplease.qrshop.service.GenericService;
 /**
  * @author Chrisostomos Bakouras
  */
-public interface ProductService extends GenericService<Product, Product> {
+public interface ProductService extends GenericService<Product> {
 }

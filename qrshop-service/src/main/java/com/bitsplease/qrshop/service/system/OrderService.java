@@ -7,5 +7,5 @@ import com.bitsplease.qrshop.service.GenericService;
 /**
  * @author Chrisostomos Bakouras
  */
-public interface OrderService extends GenericService<Order, Order> {
+public interface OrderService extends GenericService<Order> {
 }

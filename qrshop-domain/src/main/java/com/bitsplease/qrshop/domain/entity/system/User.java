@@ -3,6 +3,7 @@ package com.bitsplease.qrshop.domain.entity.system;
 import com.bitsplease.qrshop.domain.entity.BaseEntity;
 import com.bitsplease.qrshop.domain.entity.embeddable.Name;
 
+import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -13,8 +14,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "users")
 public class User extends BaseEntity {
+
+    @Column(name = "username")
     private String username;
 
+    @Column(name = "password")
     private String password;
 
     @Embedded

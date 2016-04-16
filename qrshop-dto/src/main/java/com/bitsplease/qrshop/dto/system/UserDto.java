@@ -1,6 +1,7 @@
 package com.bitsplease.qrshop.dto.system;
 
 import com.bitsplease.qrshop.dto.AbstractDto;
+import com.bitsplease.qrshop.dto.embeddable.NameDto;
 
 /**
  * @author Chrisostomos Bakouras
@@ -9,8 +10,7 @@ public class UserDto extends AbstractDto {
 
     private String username;
     private String password;
-    private String firstname;
-    private String lastname;
+    private NameDto name;
 
     public String getUsername() {
         return username;
@@ -28,19 +28,11 @@ public class UserDto extends AbstractDto {
         this.password = password;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public NameDto getName() {
+        return name;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setName(NameDto name) {
+        this.name = name;
     }
 }

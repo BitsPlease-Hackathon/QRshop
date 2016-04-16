@@ -5,15 +5,15 @@ import java.util.List;
 /**
  * @author Chrisostomos Bakouras
  */
-public interface GenericService<T, D> {
+public interface GenericService<T> {
 
     List<T> findAll();
 
     T findOne(String id);
 
-    T update(D entity, String id);
+    T update(T entity, String id);
 
-    T create(D entity);
+    T create(T entity);
 
     void delete(String id);
 }
