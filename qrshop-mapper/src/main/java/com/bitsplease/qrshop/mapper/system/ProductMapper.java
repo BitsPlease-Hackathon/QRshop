@@ -1,0 +1,13 @@
+package com.bitsplease.qrshop.mapper.system;
+
+import com.bitsplease.qrshop.domain.entity.system.Product;
+import com.bitsplease.qrshop.dto.system.ProductDto;
+import com.bitsplease.qrshop.mapper.GenericMapper;
+import org.mapstruct.Mapper;
+
+/**
+ * @author Chrisostomos Bakouras
+ */
+@Mapper
+public interface ProductMapper extends GenericMapper<ProductDto, Product> {
+}

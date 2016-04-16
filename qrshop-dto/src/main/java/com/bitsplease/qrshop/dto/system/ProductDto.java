@@ -1,37 +1,17 @@
-package com.bitsplease.qrshop.domain.entity.system;
+package com.bitsplease.qrshop.dto.system;
 
-import com.bitsplease.qrshop.domain.entity.BaseEntity;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import java.util.List;
+import com.bitsplease.qrshop.dto.AbstractDto;
 
 /**
  * @author Chrisostomos Bakouras
  */
-@Entity
-@Table(name = "products")
-public class Product extends BaseEntity {
+public class ProductDto extends AbstractDto {
 
-    @Column(name = "product_name")
     private String name;
-
-    @Column(name = "description")
     private String description;
-
-    @Column(name = "sort_description")
     private String sortDescription;
-
-    @Column(name = "price")
     private Double price;
-
-    @Column(name = "discount")
     private Double discount;
-
-    @OneToMany
-    private List<OrderDetail> orderDetails;
 
     public String getName() {
         return name;
