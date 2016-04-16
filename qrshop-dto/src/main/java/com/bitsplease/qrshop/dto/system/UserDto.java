@@ -10,7 +10,9 @@ public class UserDto extends AbstractDto {
 
     private String username;
     private String password;
+    private String email;
     private NameDto name;
+    private String role;
 
     public String getUsername() {
         return username;
@@ -34,5 +36,21 @@ public class UserDto extends AbstractDto {
 
     public void setName(NameDto name) {
         this.name = name;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

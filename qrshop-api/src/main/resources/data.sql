@@ -1,4 +1,4 @@
-INSERT INTO users (id, username, password, first_name, last_name) VALUES ('1111-1111-1111', 'admin', 'admin', 'Periklis', 'Astathopoulos');
+INSERT INTO users (id, username, password, email, first_name, last_name, role) VALUES ('1111-1111-1111', 'admin', 'admin', 'perastath@gmail.com', 'Periklis', 'Astathopoulos', 'ADMIN');
 
 INSERT INTO products (id, product_name, description, sort_description, price, discount) VALUES ('1111-1111-1111', 'Laptop', 'Lenovo laptop cpu 4 cores, 8gb ram, 1tb ssd', 'Lenovo laptop', 2000, 0);
 INSERT INTO products (id, product_name, description, sort_description, price, discount) VALUES ('2222-2222-2222', 'Table', 'Lenovo tablet cpu 4 cores, 8gb ram', 'Lenovo tablet', 600, 0);

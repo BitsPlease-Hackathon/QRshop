@@ -7,4 +7,5 @@ import com.bitsplease.qrshop.service.GenericService;
  * @author Chrisostomos Bakouras
  */
 public interface UserService extends GenericService<User> {
+    User getUserByUsername(String username);
 }
