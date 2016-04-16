@@ -2,7 +2,7 @@ package com.bitsplease.qrshop.dto.system;
 
 import com.bitsplease.qrshop.dto.AbstractDto;
 
-import java.util.Date;
+import java.sql.Date;
 
 /**
  * @author Chrisostomos Bakouras
