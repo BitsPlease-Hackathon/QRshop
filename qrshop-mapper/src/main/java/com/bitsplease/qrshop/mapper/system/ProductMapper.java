@@ -9,6 +9,6 @@ import org.springframework.stereotype.Component;
 /**
  * @author Chrisostomos Bakouras
  */
-@Mapper(componentModel = "spring")
+@Mapper
 public interface ProductMapper extends GenericMapper<ProductDto, Product> {
 }

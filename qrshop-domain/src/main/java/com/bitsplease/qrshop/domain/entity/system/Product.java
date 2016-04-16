@@ -30,7 +30,7 @@ public class Product extends BaseEntity {
     @Column(name = "discount")
     private Double discount;
 
-    @OneToMany
+    @OneToMany(mappedBy = "product")
     private List<OrderDetail> orderDetails;
 
     public String getName() {

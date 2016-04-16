@@ -8,6 +8,6 @@ import org.mapstruct.Mapper;
 /**
  * @author Chrisostomos Bakouras
  */
-@Mapper
+@Mapper(uses = OrderDetailMapper.class)
 public interface OrderMapper extends GenericMapper<OrderDto, Order> {
 }

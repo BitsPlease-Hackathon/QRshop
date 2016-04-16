@@ -22,7 +22,7 @@ public class Order extends BaseEntity {
     @Column(name = "status")
     private String status;
 
-    @OneToMany
+    @OneToMany(mappedBy = "order")
     private List<OrderDetail> orderDetails;
 
     public Date getDate() {
@@ -39,5 +39,13 @@ public class Order extends BaseEntity {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public List<OrderDetail> getOrderDetails() {
+        return orderDetails;
+    }
+
+    public void setOrderDetails(List<OrderDetail> orderDetails) {
+        this.orderDetails = orderDetails;
     }
 }
