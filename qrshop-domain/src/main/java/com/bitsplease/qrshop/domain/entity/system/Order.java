@@ -4,8 +4,10 @@ import com.bitsplease.qrshop.domain.entity.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.sql.Date;
+import java.util.List;
 
 /**
  * @author Chrisostomos Bakouras
@@ -20,7 +22,8 @@ public class Order extends BaseEntity {
     @Column(name = "status")
     private String status;
 
-
+    @OneToMany
+    private List<OrderDetail> orderDetails;
 
     public Date getDate() {
         return date;

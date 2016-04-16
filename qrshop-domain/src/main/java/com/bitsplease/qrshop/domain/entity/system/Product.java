@@ -4,7 +4,9 @@ import com.bitsplease.qrshop.domain.entity.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.List;
 
 /**
  * @author Chrisostomos Bakouras
@@ -27,6 +29,9 @@ public class Product extends BaseEntity {
 
     @Column(name = "discount")
     private Double discount;
+
+    @OneToMany
+    private List<OrderDetail> orderDetails;
 
     public String getName() {
         return name;
