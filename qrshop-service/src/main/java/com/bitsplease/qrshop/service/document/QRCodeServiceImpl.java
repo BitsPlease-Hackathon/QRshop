@@ -23,7 +23,7 @@ public class QRCodeServiceImpl implements QRCodeService {
 
     @Override
     public String qrCodify(String qrCodeData) {
-        String filePath = UUID.randomUUID().toString() + ".png";
+        String filePath = System.getProperty("java.io.tmpdir") + "/" + UUID.randomUUID().toString() + ".png";
 
         String charset = "UTF-8";
         Map hintMap = new HashMap();

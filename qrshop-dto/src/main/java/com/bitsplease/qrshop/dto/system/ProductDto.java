@@ -12,6 +12,7 @@ public class ProductDto extends AbstractDto {
     private String sortDescription;
     private Double price;
     private Double discount;
+    private String imageBase64;
 
     public String getName() {
         return name;
@@ -51,5 +52,13 @@ public class ProductDto extends AbstractDto {
 
     public void setDiscount(Double discount) {
         this.discount = discount;
+    }
+
+    public String getImageBase64() {
+        return imageBase64;
+    }
+
+    public void setImageBase64(String imageBase64) {
+        this.imageBase64 = imageBase64;
     }
 }
