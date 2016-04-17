@@ -30,6 +30,9 @@ public class Product extends BaseEntity {
     @Column(name = "discount")
     private Double discount;
 
+    @Column(name = "image_base_64", length = 1048576)
+    private String imageBase64;
+
     @OneToMany(mappedBy = "product")
     private List<OrderDetail> orderDetails;
 
@@ -71,5 +74,13 @@ public class Product extends BaseEntity {
 
     public void setDiscount(Double discount) {
         this.discount = discount;
+    }
+
+    public String getImageBase64() {
+        return imageBase64;
+    }
+
+    public void setImageBase64(String imageBase64) {
+        this.imageBase64 = imageBase64;
     }
 }

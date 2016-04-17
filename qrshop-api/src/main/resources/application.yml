@@ -35,3 +35,9 @@ spring:
 spring:
   profiles: Production
 
+  datasource:
+    initialize: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
