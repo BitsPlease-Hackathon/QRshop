@@ -1,6 +1,7 @@
 package com.bitsplease.qrshop.dto.system;
 
 import com.bitsplease.qrshop.dto.AbstractDto;
+import com.bitsplease.qrshop.dto.Reference;
 
 import java.sql.Date;
 import java.util.List;
@@ -13,6 +14,15 @@ public class OrderDto extends AbstractDto {
     private Date date;
     private String status;
     private List<OrderDetailDto> orderDetails;
+    private Reference customer;
+
+    public Reference getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Reference customer) {
+        this.customer = customer;
+    }
 
     public Date getDate() {
         return date;

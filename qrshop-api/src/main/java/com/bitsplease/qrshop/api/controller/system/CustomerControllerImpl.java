@@ -49,7 +49,7 @@ public class CustomerControllerImpl implements CustomerController {
     }
 
     @Override
-    @RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CustomerDto> post(@RequestBody CustomerDto customerDto) {
         Customer customer = customerMapper.fromDto(customerDto);
 
