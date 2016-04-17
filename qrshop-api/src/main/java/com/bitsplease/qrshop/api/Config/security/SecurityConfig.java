@@ -60,6 +60,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .regexMatchers(HttpMethod.GET, "\\/?").permitAll()
                 .regexMatchers(HttpMethod.POST, "\\/customers").permitAll()
                 .regexMatchers(HttpMethod.POST, "\\/orders").permitAll()
+                .regexMatchers(HttpMethod.GET, "\\/products.*").permitAll()
                 .anyRequest().authenticated()
 
                 .and()
