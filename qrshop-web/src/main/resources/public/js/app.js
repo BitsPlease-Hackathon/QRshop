@@ -12,7 +12,7 @@ angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.services'])
                     templateUrl: 'partials/products.html',
                     controller: 'ProductCtrl'
                 })
-                
+
                 .when('/products/edit', {
                     templateUrl: 'partials/editProduct.html',
                     controller: 'ProductEditor'

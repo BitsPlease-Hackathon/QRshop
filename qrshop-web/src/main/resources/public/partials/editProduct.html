@@ -1,0 +1,17 @@
+<div>
+    <form name="myForm">
+        <img src="#"/>
+        <label class="input-group">Name: <input class="input-group" name="name" type="text" value="{{product.name}}" required/></label>
+        <label class="input-group">Description: <textarea class="input-group" name="description" rows="4" cols="50" required>{{product.description}}</textarea></label>
+        <label class="input-group">Short desc.:<input class="input-group" name="sortDescription" type="text" value="{{product.sortDescription}}" required/></label>
+        <label class="input-group">Price:<input class="input-group" name="price" type="number" value="{{product.price}}" required/></label>
+        <label class="input-group">Discount<input class="input-group" name="discount" type="number" value="{{product.discount}}" required/></label>
+        <button ng-disabled="myForm.$invalid" ng-click="submit()" class="btn btn-submit">Submit</button>
+    </form>
+</div>
+
+<style>
+    input, img, textarea {
+        display: block;
+    }
+</style>

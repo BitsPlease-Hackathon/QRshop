@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: Development
+
+server:
+  port: 8080
+
+zuul:
+  routes:
+    api:
+      path: /api/**
+      url: http://localhost:9000
+
+---
+
+spring:
+  profiles: Development
+
+---
+
+spring:
+  profiles: Production

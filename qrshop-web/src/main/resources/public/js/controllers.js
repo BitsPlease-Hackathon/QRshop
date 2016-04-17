@@ -20,6 +20,11 @@ angular.module('myApp.controllers', [])
         $scope.editProduct = function (product) {
             Core.product = product;
             $location.path('/products/edit');
+        };
+
+        $scope.showProduct = function (product) {
+            Core.product = product;
+            $location.path('/products/' + product.id);
         }
 
     })
