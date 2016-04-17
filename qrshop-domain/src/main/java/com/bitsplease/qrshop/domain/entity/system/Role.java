@@ -5,5 +5,5 @@ package com.bitsplease.qrshop.domain.entity.system;
  */
 public enum Role {
 
-    USER, ADMIN
+    ROLE_USER, ROLE_ADMIN, ROLE_SUPER
 }

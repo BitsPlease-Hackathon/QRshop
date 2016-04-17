@@ -4,6 +4,8 @@ import com.bitsplease.qrshop.domain.entity.system.User;
 import com.bitsplease.qrshop.domain.resository.GenericRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @author Chrisostomos Bakouras
  */

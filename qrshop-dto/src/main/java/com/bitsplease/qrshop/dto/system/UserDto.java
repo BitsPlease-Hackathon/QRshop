@@ -13,6 +13,7 @@ public class UserDto extends AbstractDto {
     private String email;
     private NameDto name;
     private String role;
+    private Boolean enabled;
 
     public String getUsername() {
         return username;
@@ -52,5 +53,13 @@ public class UserDto extends AbstractDto {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
     }
 }

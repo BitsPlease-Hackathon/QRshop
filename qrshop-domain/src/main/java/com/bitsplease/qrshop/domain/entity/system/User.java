@@ -3,6 +3,7 @@ package com.bitsplease.qrshop.domain.entity.system;
 import com.bitsplease.qrshop.domain.entity.BaseEntity;
 import com.bitsplease.qrshop.domain.entity.embeddable.Name;
 
+
 import javax.persistence.*;
 
 /**
@@ -20,6 +21,9 @@ public class User extends BaseEntity {
 
     @Column(name = "email", nullable = false)
     private String email;
+
+    @Column(name = "enabled", nullable = false)
+    private Boolean enabled;
 
     @Embedded
     private Name name;
@@ -66,5 +70,13 @@ public class User extends BaseEntity {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
     }
 }
