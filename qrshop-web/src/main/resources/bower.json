@@ -1,8 +1,15 @@
 {
   "name": "qrshop",
   "private": "true",
+  "description": "e-shop manager",
+  "version": "0.0.0",
+  "homepage": "https://github.com/BitsPlease-Hackathon",
   "dependencies": {
-    "angular": "~1.4.10",
-    "angular-route": "~1.4.10"
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "angular-material": "0.9.8",
+    "html5-boilerplate": "~5.2.0"
   }
 }

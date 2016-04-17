@@ -1,0 +1,17 @@
+<div>
+    <div ng-repeat="order in orders track by $index">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th><th>NAME</th><th>DESCRIPTION</th><th>SHORT DESCRIPTION</th><th>PRICE</th><th>DISCOUNT</th><th>EDIT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="order in orders track by $index">
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>{{order.name}}</div>
+    </div>
+</div>
