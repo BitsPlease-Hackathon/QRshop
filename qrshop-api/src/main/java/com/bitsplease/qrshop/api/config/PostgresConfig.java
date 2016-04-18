@@ -1,4 +1,4 @@
-package com.bitsplease.qrshop.api.Config;
+package com.bitsplease.qrshop.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.bitsplease.qrshop.api.Config;
+package com.bitsplease.qrshop.api.config;
 
 import java.io.IOException;
 import javax.servlet.Filter;
